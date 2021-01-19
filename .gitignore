@@ -1,0 +1,9 @@
+# Gulp
+/node_modules/
+/build/
+
+# WebStorm
+/.idea/
+
+# Mac
+/.DS_Store/

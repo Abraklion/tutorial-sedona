@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style.css">
+	<title>Город Седона</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<header class="header">
+
+			<nav class="header__nav">
+				<a class="header__logo">
+					<img src="img/logo.png" width="140" height="71" alt="Логотип города Седона">
+				</a>
+				<ul class="header__nav-menu menu">
+					<li class="menu__item">
+						<a class="menu__link" href="blank.html">Информация</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="blank.html">Фото и видео</a>
+					</li>
+					<li class="menu__item">
+						&nbsp;
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="blank.html">Карта штата</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="hotels.html">Гостиницы</a>
+					</li>
+				</ul><!--/.menu-->
+			</nav>
+
+		</header><!--/.header-->
+
+		<main>
+
+			<div class="welcome">
+				<img src="img/welcome.svg" width="456" height="350" alt="Добро пожаловать в Седона">
+			</div><!--/.welcome-->
+
+			<h1 class="index-title">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h1>
+
+			<section class="cause">
+
+				<h2 class="cause__title">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!</h2>
+
+				<section>
+					<div class="cause__item">
+						<div class="cause__item-description">
+							<h3 class="cause__item-title">Настоящий городок</h3>
+							<div class="cause__item-number">&mdash;&nbsp;&#8470;&nbsp;1 &mdash;</div>
+							<p class="cause__item-text">Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
+						</div>
+						<figure class="cause__item-img">
+							<img src="img/img-1.jpg" width="800" height="256" alt="Город Седона">
+						</figure>
+					</div>
+					<ul class="features">
+						<li class="features__item">
+							<svg class="features__img" width="75" height="72">
+							  <use xlink:href="img/sprite.svg#icon-1"/>
+							</svg>
+							<h4 class="features__title">Жильё</h4>
+							<p class="features__text">Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в&nbsp;кино!</p>
+						</li>
+						<li class="features__item">
+              <svg class="features__img" width="74" height="70">
+                <use xlink:href="img/sprite.svg#icon-2"/>
+              </svg>
+							<h4 class="features__title">Еда</h4>
+							<p class="features__text">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
+						</li>
+						<li class="features__item">
+              <svg class="features__img" width="64" height="76">
+                <use xlink:href="img/sprite.svg#icon-3"/>
+              </svg>
+							<h4 class="features__title">Сувениры</h4>
+							<p class="features__text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
+						</li>
+					</ul><!--/.features-->
+				</section>
+
+				<section class="cause__item cause__item--img_left">
+					<div class="cause__item-description">
+						<h3 class="cause__item-title">Там есть мост дьявала</h3>
+						<div class="cause__item-number">&mdash;&nbsp;&#8470;&nbsp;2 &mdash;</div>
+						<p class="cause__item-text">Да, по&nbsp;нему можно пройти! Если конечно вы&nbsp;осмелитесь</p>
+					</div>
+					<figure class="cause__item-img">
+						<img src="img/img-2.jpg" width="800" height="256" alt="Мост дьявола">
+					</figure>
+				</section>
+
+				<section class="cause__rest">
+					<div class="cause__rest-item">
+						<h3 class="cause__rest-title">Небольшая площадь</h3>
+						<div class="cause__rest-number">&mdash;&nbsp;&#8470;&nbsp;3 &mdash;</div>
+						<p class="cause__rest-text">Все достопримечательности находятся очень близко</p>
+					</div>
+					<div class="cause__rest-item">
+						<h3 class="cause__rest-title">Красная дорога</h3>
+						<div class="cause__rest-number">&mdash;&nbsp;&#8470;&nbsp;4 &mdash;</div>
+						<p class="cause__rest-text">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
+					</div>
+					<div class="cause__rest-item">
+						<h3 class="cause__rest-title">Мало Туристов</h3>
+						<div class="cause__rest-number">&mdash;&nbsp;&#8470;&nbsp;5 &mdash;</div>
+						<p class="cause__rest-text">Большенство едет в&nbsp;гранд каньон и&nbsp;толпится там</p>
+					</div>
+				</section>
+
+			</section><!--/.cause-->
+
+			<section class="interest">
+				<h2 class="interest__title">Заинтересовались?</h2>
+				<p class="interest__subtitle">Укажите предполагаемые даты поездки,<br> и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне</p>
+				<!-- Карта -->
+				<div class="interest__form">
+					<button type="button">Поиск гостиницы в Седоне</button>
+					<!-- Форма -->
+				</div>
+			</section><!--/.interest-->
+
+		</main>
+
+		<footer class="footer">
+
+			<section class="footer__contacts contacts">
+				<h2 class="visually-hidden">Контактная информация</h2>
+				<p class="contacts__info">
+					#visitsedona<br>
+					Тел: <a class="contacts__phone" href="tel:+74956660166">+7(495) 666-01-66</a>
+				</p>
+			</section><!--/.contacts-->
+
+			<section class="footer__social social">
+				<h2 class="visually-hidden">Социальные сети</h2>
+				<ul class="social__list">
+					<li class="social__item">
+						<a class="social__link" href="#">
+              <svg width="17" height="15">
+                <use xlink:href="img/sprite.svg#twitter"/>
+              </svg>
+						</a>
+					</li>
+					<li class="social__item">
+            <svg width="12" height="22">
+              <use xlink:href="img/sprite.svg#fb-icon"/>
+            </svg>
+					</li>
+					<li class="social__item">
+            <svg width="20" height="16">
+              <use xlink:href="img/sprite.svg#youtube"/>
+            </svg>
+					</li>
+				</ul>
+			</section><!--/.social-->
+
+			<p class="footer__copyright copyright">
+				Websity by
+				<a class="copyright__link" href="#">
+          <svg width="115" height="41">
+            <use xlink:href="img/sprite.svg#logo_name"/>
+          </svg>
+				</a>
+			</p><!--/.copyright-->
+
+		</footer><!--/.footer-->
+
+	</div>
+
+</body>
+</html>

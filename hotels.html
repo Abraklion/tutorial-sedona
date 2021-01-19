@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style.css">
+	<title>Гостиницы Седона</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<header class="header">
+
+			<nav class="header__nav">
+				<a class="header__logo" href="index.html">
+					<img src="img/logo.png" width="140" height="71" alt="Логотип города Седона">
+				</a>
+				<ul class="header__nav-menu menu">
+					<li class="menu__item">
+						<a class="menu__link" href="blank.html">Информация</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="blank.html">Фото и видео</a>
+					</li>
+					<li class="menu__item">
+						&nbsp;
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="blank.html">Карта штата</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="hotels.html">Гостиницы</a>
+					</li>
+				</ul><!--/.menu-->
+			</nav>
+
+		</header><!--/.header-->
+
+		<main>
+
+			<h1 class="visually-hidden">Гостиницы в городе Седона</h1>
+
+			<section>
+				<h2 class="visually-hidden">Фильтр гостиниц</h2>
+				<!-- Здесь будет форма фильтра -->
+			</section>
+
+			<section class="sorting">
+				<h2 class="visually-hidden">Сортировка результатов поиска</h2>
+				<p class="sorting__result">Найдено: 3</p>
+				<p class="sorting__text">Сортировка:</p>
+				<ul class="sorting__params">
+					<li class="sorting__item">
+						<button class="sorting__button" type="button">По цене</button>
+					</li>
+					<li class="sorting__item">
+						<button class="sorting__button" type="button">По типу</button>
+					</li>
+					<li class="sorting__item">
+						<button class="sorting__button" type="button">По рейтингу</button>
+					</li>
+				</ul>
+				<ul class="sorting__order">
+					<li class="sorting__order-item">
+						<button class="sorting__order-item" type="button" title="Сортировка в порядке увеличение" aria-label="Сортировка в порядке увеличение">
+              <svg width="11" height="10">
+                <use xlink:href="img/sprite.svg#icon-up-dir"/>
+              </svg>
+            </button>
+					</li>
+					<li class="sorting__order-item">
+						<button class="sorting__order-item sorting__order-button--active" type="button" title="Сортировка в порядке убывания" aria-label="Сортировка в порядке убывания">
+              <svg width="11" height="10">
+                <use xlink:href="img/sprite.svg#icon-down-dir"/>
+              </svg>
+            </button>
+					</li>
+				</ul>
+			</section><!--/.sorting-->
+
+			<section class="hotels">
+				<h2 class="visually-hidden">Список гостиниц по результатом поиска</h2>
+				<ul class="hotels__list">
+					<li class="hotels__item">
+						<figure class="hotels__img">
+							<img src="img/hotels-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
+						</figure>
+						<div class="hotels__description">
+							<h3 class="hotels__name"><a href="blank.html">Amara Resort & Spa</a></h3>
+							<p class="hotels__price"><span>Гостиница</span> От 4000 Р.</p>
+							<div class="hotels__container">
+								<a class="hotels__link button" href="blank.html">Подробнее</a>
+								<a class="hotels__link button" href="blank.html">Забронировать</a>
+							</div>
+						</div>
+						<div class="hotels__rating">
+							<p class="hotels__star">
+                <svg width="18" height="17">
+                  <use xlink:href="img/sprite.svg#star"/>
+                </svg>
+                <svg width="18" height="17">
+                  <use xlink:href="img/sprite.svg#star"/>
+                </svg>
+                <svg width="18" height="17">
+                  <use xlink:href="img/sprite.svg#star"/>
+                </svg>
+                <svg width="18" height="17">
+                  <use xlink:href="img/sprite.svg#star"/>
+                </svg>
+							</p>
+							<p class="hotels__count">Рейтинг: 8,5</p>
+						</div>
+					</li>
+					<li class="hotels__item">
+						<figure class="hotels__img">
+							<img src="img/hotels-2.jpg" width="135" height="90" alt="Desert Quail Inn">
+						</figure>
+						<div class="hotels__description">
+							<h3 class="hotels__name"><a href="blank.html">Desert Quail Inn</a></h3>
+							<p class="hotels__price"><span>Мотель</span> От 3000 Р.</p>
+							<div class="hotels__container">
+								<a class="hotels__link button" href="blank.html">Подробнее</a>
+								<a class="hotels__link button" href="blank.html">Забронировать</a>
+							</div>
+						</div>
+						<div class="hotels__rating">
+							<p class="hotels__star">
+                <svg width="18" height="17">
+                  <use xlink:href="img/sprite.svg#star"/>
+                </svg>
+                <svg width="18" height="17">
+                  <use xlink:href="img/sprite.svg#star"/>
+                </svg>
+                <svg width="18" height="17">
+                  <use xlink:href="img/sprite.svg#star"/>
+                </svg>
+							</p>
+							<p class="hotels__count">Рейтинг: 8,9</p>
+						</div>
+					</li>
+					<li class="hotels__item">
+						<figure class="hotels__img">
+							<img src="img/hotels-3.jpg" width="135" height="90" alt="Desert Quail Inn">
+						</figure>
+						<div class="hotels__description">
+							<h3 class="hotels__name"><a href="blank.html">Villas at Poco Diablo</a></h3>
+							<p class="hotels__price"><span>Апартаменты</span> От 2000 Р.</p>
+							<div class="hotels__container">
+								<a class="hotels__link button" href="blank.html">Подробнее</a>
+								<a class="hotels__link button" href="blank.html">Забронировать</a>
+							</div>
+						</div>
+						<div class="hotels__rating">
+							<p class="hotels__star">
+                <svg width="18" height="17">
+                  <use xlink:href="img/sprite.svg#star"/>
+                </svg>
+                <svg width="18" height="17">
+                  <use xlink:href="img/sprite.svg#star"/>
+                </svg>
+							</p>
+							<p class="hotels__count">Рейтинг: 9,2</p>
+						</div>
+					</li>
+				</ul>
+			</section><!--/.hotels-->
+
+		</main>
+
+    <footer class="footer">
+
+      <section class="footer__contacts contacts">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <p class="contacts__info">
+          #visitsedona<br>
+          Тел: <a class="contacts__phone" href="tel:+74956660166">+7(495) 666-01-66</a>
+        </p>
+      </section><!--/.contacts-->
+
+      <section class="footer__social social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg width="17" height="15">
+                <use xlink:href="img/sprite.svg#twitter"/>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <svg width="12" height="22">
+              <use xlink:href="img/sprite.svg#fb-icon"/>
+            </svg>
+          </li>
+          <li class="social__item">
+            <svg width="20" height="16">
+              <use xlink:href="img/sprite.svg#youtube"/>
+            </svg>
+          </li>
+        </ul>
+      </section><!--/.social-->
+
+      <p class="footer__copyright copyright">
+        Websity by
+        <a class="copyright__link" href="#">
+          <svg width="115" height="41">
+            <use xlink:href="img/sprite.svg#logo_name"/>
+          </svg>
+        </a>
+      </p><!--/.copyright-->
+
+    </footer><!--/.footer-->
+
+	</div>
+
+</body>
+</html>
