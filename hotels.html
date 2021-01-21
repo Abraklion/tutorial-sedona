@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
+
 	<title>Гостиницы Седона</title>
 </head>
 
@@ -33,7 +34,7 @@
 						<a class="menu__link" href="blank.html">Карта штата</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link" href="hotels.html">Гостиницы</a>
+						<a class="menu__link menu__link--active" tabindex="-1" href="hotels.html">Гостиницы</a>
 					</li>
 				</ul><!--/.menu-->
 			</nav>
@@ -55,7 +56,7 @@
 				<p class="sorting__text">Сортировка:</p>
 				<ul class="sorting__params">
 					<li class="sorting__item">
-						<button class="sorting__button" type="button">По цене</button>
+						<button class="sorting__button sorting__button--active" tabindex="-1" type="button">По цене</button>
 					</li>
 					<li class="sorting__item">
 						<button class="sorting__button" type="button">По типу</button>
@@ -66,15 +67,15 @@
 				</ul>
 				<ul class="sorting__order">
 					<li class="sorting__order-item">
-						<button class="sorting__order-item" type="button" title="Сортировка в порядке увеличение" aria-label="Сортировка в порядке увеличение">
-              <svg width="11" height="10">
+						<button class="sorting__order-button" type="button" title="Сортировка в порядке увеличение" aria-label="Сортировка в порядке увеличение">
+              <svg class="sorting__icon" width="11" height="10">
                 <use xlink:href="img/sprite.svg#icon-up-dir"/>
               </svg>
             </button>
 					</li>
 					<li class="sorting__order-item">
-						<button class="sorting__order-item sorting__order-button--active" type="button" title="Сортировка в порядке убывания" aria-label="Сортировка в порядке убывания">
-              <svg width="11" height="10">
+						<button class="sorting__order-button sorting__order-button--active" tabindex="-1" type="button" title="Сортировка в порядке убывания" aria-label="Сортировка в порядке убывания">
+              <svg class="sorting__icon" width="11" height="10">
                 <use xlink:href="img/sprite.svg#icon-down-dir"/>
               </svg>
             </button>
@@ -93,7 +94,7 @@
 							<h3 class="hotels__name"><a href="blank.html">Amara Resort & Spa</a></h3>
 							<p class="hotels__price"><span>Гостиница</span> От 4000 Р.</p>
 							<div class="hotels__container">
-								<a class="hotels__link button" href="blank.html">Подробнее</a>
+								<a class="hotels__link button button--bg-blue" href="blank.html">Подробнее</a>
 								<a class="hotels__link button" href="blank.html">Забронировать</a>
 							</div>
 						</div>
@@ -123,7 +124,7 @@
 							<h3 class="hotels__name"><a href="blank.html">Desert Quail Inn</a></h3>
 							<p class="hotels__price"><span>Мотель</span> От 3000 Р.</p>
 							<div class="hotels__container">
-								<a class="hotels__link button" href="blank.html">Подробнее</a>
+								<a class="hotels__link button button--bg-blue" href="blank.html">Подробнее</a>
 								<a class="hotels__link button" href="blank.html">Забронировать</a>
 							</div>
 						</div>
@@ -150,7 +151,7 @@
 							<h3 class="hotels__name"><a href="blank.html">Villas at Poco Diablo</a></h3>
 							<p class="hotels__price"><span>Апартаменты</span> От 2000 Р.</p>
 							<div class="hotels__container">
-								<a class="hotels__link button" href="blank.html">Подробнее</a>
+								<a class="hotels__link button button--bg-blue" href="blank.html">Подробнее</a>
 								<a class="hotels__link button" href="blank.html">Забронировать</a>
 							</div>
 						</div>
@@ -192,14 +193,18 @@
             </a>
           </li>
           <li class="social__item">
-            <svg width="12" height="22">
-              <use xlink:href="img/sprite.svg#fb-icon"/>
-            </svg>
+            <a class="social__link" href="#">
+              <svg width="12" height="22">
+                <use xlink:href="img/sprite.svg#fb-icon"/>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <svg width="20" height="16">
-              <use xlink:href="img/sprite.svg#youtube"/>
-            </svg>
+            <a class="social__link" href="#">
+              <svg width="20" height="16">
+                <use xlink:href="img/sprite.svg#youtube"/>
+              </svg>
+            </a>
           </li>
         </ul>
       </section><!--/.social-->
