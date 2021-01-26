@@ -828,17 +828,9 @@ img{
 
   .cause__item-description{
     flex: 0 0.5 400px;
-    padding: 47px 10px;
+    padding: 47px 45px;
     box-sizing: border-box;
     background-color: var(--basic-light-blue);
-  }
-
-  .cause__item-description .description__title,
-  .cause__item-description .description__number,
-  .cause__item-description .description__text{
-    max-width: 305px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .cause__item-img{
@@ -871,15 +863,8 @@ img{
   }
 
   .cause__rest-item{
-    padding: 47px 10px 49px 10px;
-  }
-
-  .cause__rest-item .description__title,
-  .cause__rest-item .description__number,
-  .cause__rest-item .description__text{
-    max-width: 264px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 47px 60px 49px 60px;
+    box-sizing: border-box;
   }
 
   /* ==== 6 Interest ==== */
@@ -926,7 +911,7 @@ img{
     object-fit: cover;
   }
 
-  .interest__form{
+  .interest__form-container{
     position: absolute;
     top: 34px;
     left: 50%;
@@ -962,8 +947,7 @@ img{
     display: flex;
     align-items: center;
     border-bottom: 1px solid var(--basic-gainsboro);
-    padding-top: 29px;
-    padding-bottom: 30px;
+    padding: 29px 72px 30px 72px;
   }
 
   .sorting__result{
@@ -1110,8 +1094,7 @@ img{
     grid-column-gap: 30px;
     align-content: start;
     border-bottom: 1px solid var(--basic-gainsboro);
-    padding-top: 25px;
-    padding-bottom: 30px;
+    padding: 25px 72px 30px 72px;
   }
 
   .hotels__img{
