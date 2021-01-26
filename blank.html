@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -10,15 +10,15 @@
 	<title>404</title>
 </head>
 
-<body>
+<body class="page__body">
 
 	<div class="container">
 
 		<header class="header">
 
-			<nav class="header__nav">
+			<nav class="header__nav wrapper">
 				<a class="header__logo" href="index.html">
-					<img src="img/logo.png" width="140" height="71" alt="Логотип города Седона">
+          <img src="img/logo.svg" width="140" height="71" alt="Логотип города Седона">
 				</a>
 				<ul class="header__nav-menu menu">
 					<li class="menu__item">
@@ -26,9 +26,6 @@
 					</li>
 					<li class="menu__item">
 						<a class="menu__link" href="blank.html">Фото и видео</a>
-					</li>
-					<li class="menu__item">
-						&nbsp;
 					</li>
 					<li class="menu__item">
 						<a class="menu__link" href="blank.html">Карта штата</a>
@@ -41,59 +38,67 @@
 
 		</header><!--/.header-->
 
-		<main>
+		<main class="main-blank">
 
-			<h1>Неисправная ссылка</h1>
+			<h1>Страница не найдена</h1>
 
-			<p>Вернится на <a href="index.html">главную страницу</a>.</p>
+			<p>Вернится на <a href="index.html">главную страницу</a></p>
 
 		</main>
 
     <footer class="footer">
 
-      <section class="footer__contacts contacts">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <p class="contacts__info">
-          #visitsedona<br>
-          Тел: <a class="contacts__phone" href="tel:+74956660166">+7(495) 666-01-66</a>
-        </p>
-      </section><!--/.contacts-->
+      <div class="footer__wrapper wrapper">
 
-      <section class="footer__social social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg width="17" height="15">
-                <use xlink:href="img/sprite.svg#twitter"/>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg width="12" height="22">
-                <use xlink:href="img/sprite.svg#fb-icon"/>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg width="20" height="16">
-                <use xlink:href="img/sprite.svg#youtube"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </section><!--/.social-->
+        <section class="footer__contacts contacts">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <div class="contacts__info">
+            <p class="contacts__hashtag">
+              #visitsedona
+            </p>
+            <p class="contacts__phone">
+              Тел: <a href="tel:+74956660166">+7(495) 666-02-66</a>
+            </p>
+          </div>
+        </section><!--/.contacts-->
 
-      <p class="footer__copyright copyright">
-        Websity by
-        <a class="copyright__link" href="#">
-          <svg width="115" height="41">
-            <use xlink:href="img/sprite.svg#logo_name"/>
-          </svg>
-        </a>
-      </p><!--/.copyright-->
+        <section class="footer__social social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="17" height="15">
+                  <use xlink:href="img/sprite.svg#twitter"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="12" height="22">
+                  <use xlink:href="img/sprite.svg#fb-icon"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="20" height="16">
+                  <use xlink:href="img/sprite.svg#youtube"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section><!--/.social-->
+
+        <p class="footer__copyright copyright">
+          Website by
+          <a class="copyright__link" href="#">
+            <svg width="115" height="40">
+              <use xlink:href="img/sprite.svg#logo_name"/>
+            </svg>
+          </a>
+        </p><!--/.copyright-->
+
+      </div>
 
     </footer><!--/.footer-->
 

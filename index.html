@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -10,15 +10,15 @@
 	<title>Город Седона</title>
 </head>
 
-<body>
+<body class="page__body">
 
 	<div class="container">
 
 		<header class="header">
 
-			<nav class="header__nav">
+			<nav class="header__nav wrapper">
 				<a class="header__logo">
-					<img src="img/logo.png" width="140" height="71" alt="Логотип города Седона">
+					<img src="img/logo.svg" width="140" height="71" alt="Логотип города Седона">
 				</a>
 				<ul class="header__nav-menu menu">
 					<li class="menu__item">
@@ -26,9 +26,6 @@
 					</li>
 					<li class="menu__item">
 						<a class="menu__link" href="blank.html">Фото и видео</a>
-					</li>
-					<li class="menu__item">
-						&nbsp;
 					</li>
 					<li class="menu__item">
 						<a class="menu__link" href="blank.html">Карта штата</a>
@@ -44,10 +41,10 @@
 		<main>
 
 			<div class="welcome">
-				<img src="img/welcome.svg" width="460" height="353" alt="Добро пожаловать в Седона">
+				<img src="img/welcome.svg" width="458" height="353" alt="Добро пожаловать в Седона">
 			</div><!--/.welcome-->
 
-			<h1 class="index-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+			<h1 class="index-title">Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</h1>
 
 			<section class="cause">
 
@@ -66,23 +63,29 @@
 					</div>
 					<ul class="features">
 						<li class="features__item">
-							<svg class="features__img" width="75" height="72">
-							  <use xlink:href="img/sprite.svg#icon-1"/>
-							</svg>
+              <div class="features__img">
+                <svg width="75" height="72">
+                  <use xlink:href="img/sprite.svg#icon-1"/>
+                </svg>
+              </div>
 							<h4 class="features__title">Жильё</h4>
 							<p class="features__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 						</li>
 						<li class="features__item">
-              <svg class="features__img" width="74" height="70">
-                <use xlink:href="img/sprite.svg#icon-2"/>
-              </svg>
+              <div class="features__img">
+                <svg width="74" height="70">
+                  <use xlink:href="img/sprite.svg#icon-2"/>
+                </svg>
+              </div>
 							<h4 class="features__title">Еда</h4>
 							<p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 						</li>
 						<li class="features__item">
-              <svg class="features__img" width="64" height="76">
-                <use xlink:href="img/sprite.svg#icon-3"/>
-              </svg>
+              <div class="features__img">
+                <svg width="64" height="76">
+                  <use xlink:href="img/sprite.svg#icon-3"/>
+                </svg>
+              </div>
 							<h4 class="features__title">Сувениры</h4>
 							<p class="features__text">Не только китайского, но и местного производства!</p>
 						</li>
@@ -91,7 +94,7 @@
 
 				<section class="cause__item cause__item--img_left">
 					<div class="cause__item-description description description--color_white">
-						<h3 class="description__title">Там есть<br> мост дьявала</h3>
+						<h3 class="description__title">Там есть<br> мост дьявола</h3>
 						<p class="description__number">— №2 —</p>
 						<p class="description__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 					</div><!--/.description-->
@@ -102,19 +105,19 @@
 
 				<section class="cause__rest">
 					<div class="cause__rest-item description">
-						<h3 class="description__title">Небольшая площадь</h3>
+						<h3 class="description__title">Небольшая<br> площадь</h3>
 						<p class="description__number">— №3 —</p>
 						<p class="description__text">Все достопримечательности находятся очень близко</p>
 					</div><!--/.description-->
 					<div class="cause__rest-item description">
-						<h3 class="description__title">Красная дорога</h3>
+						<h3 class="description__title">Красивая<br> дорога</h3>
 						<p class="description__number">— №4 —</p>
 						<p class="description__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 					</div><!--/.description-->
 					<div class="cause__rest-item description">
-						<h3 class="description__title">Мало Туристов</h3>
+						<h3 class="description__title">Мало<br> Туристов</h3>
 						<p class="description__number">— №5 —</p>
-						<p class="description__text">Большинство едет в гранд каньон и толпится там</p>
+						<p class="description__text">Большинство едет в гранд каньон<br> и толпится там</p>
 					</div><!--/.description-->
 				</section>
 
@@ -122,61 +125,73 @@
 
 			<section class="interest">
 				<h2 class="interest__title">Заинтересовались?</h2>
-				<p class="interest__subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-				<!-- Карта -->
-				<div class="interest__form">
-					<button class="interest__button button" type="button">Поиск гостиницы в Седоне</button>
-					<!-- Форма -->
-				</div>
+				<p class="interest__subtitle">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <div class="interest__container">
+          <div class="interest__map">
+            <img src="img/map.jpg" width="1200" height="594" alt="Карта Седона">
+          </div>
+          <div class="interest__form">
+            <button class="interest__button button" type="button">Поиск гостиницы в Седоне</button>
+            <!-- Форма -->
+          </div>
+        </div>
 			</section><!--/.interest-->
 
 		</main>
 
 		<footer class="footer">
 
-			<section class="footer__contacts contacts">
-				<h2 class="visually-hidden">Контактная информация</h2>
-				<p class="contacts__info">
-					#visitsedona<br>
-					Тел: <a class="contacts__phone" href="tel:+74956660166">+7(495) 666-01-66</a>
-				</p>
-			</section><!--/.contacts-->
+      <div class="footer__wrapper wrapper">
 
-			<section class="footer__social social">
-				<h2 class="visually-hidden">Социальные сети</h2>
-				<ul class="social__list">
-					<li class="social__item">
-						<a class="social__link" href="#">
-              <svg width="17" height="15">
-                <use xlink:href="img/sprite.svg#twitter"/>
-              </svg>
-						</a>
-					</li>
-					<li class="social__item">
-            <a class="social__link" href="#">
-              <svg width="12" height="22">
-                <use xlink:href="img/sprite.svg#fb-icon"/>
-              </svg>
-            </a>
-					</li>
-					<li class="social__item">
-            <a class="social__link" href="#">
-              <svg width="20" height="16">
-                <use xlink:href="img/sprite.svg#youtube"/>
-              </svg>
-            </a>
-          </li>
-				</ul>
-			</section><!--/.social-->
+        <section class="footer__contacts contacts">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <div class="contacts__info">
+            <p class="contacts__hashtag">
+              #visitsedona
+            </p>
+            <p class="contacts__phone">
+              Тел: <a href="tel:+74956660166">+7(495) 666-02-66</a>
+            </p>
+          </div>
+        </section><!--/.contacts-->
 
-			<p class="footer__copyright copyright">
-				Websity by
-				<a class="copyright__link" href="#">
-          <svg width="115" height="41">
-            <use xlink:href="img/sprite.svg#logo_name"/>
-          </svg>
-				</a>
-			</p><!--/.copyright-->
+        <section class="footer__social social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="17" height="15">
+                  <use xlink:href="img/sprite.svg#twitter"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="12" height="22">
+                  <use xlink:href="img/sprite.svg#fb-icon"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="20" height="16">
+                  <use xlink:href="img/sprite.svg#youtube"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section><!--/.social-->
+
+        <p class="footer__copyright copyright">
+          Website by
+          <a class="copyright__link" href="#">
+            <svg width="115" height="40">
+              <use xlink:href="img/sprite.svg#logo_name"/>
+            </svg>
+          </a>
+        </p><!--/.copyright-->
+
+      </div>
 
 		</footer><!--/.footer-->
 
