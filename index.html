@@ -58,12 +58,13 @@
 							<p class="description__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 						</div><!--/.description-->
 						<figure class="cause__item-img">
-							<img src="img/img-1.jpg" width="800" height="256" alt="Город Седона">
+							<img src="img/img-1.jpg" width="800" height="256" alt="">
+              <figcaption class="visually-hidden">Чистый и тихий городок с красивой архитектурой и природой</figcaption>
 						</figure>
 					</div>
 					<ul class="features">
 						<li class="features__item">
-              <div class="features__img">
+              <div class="features__img" aria-hidden="true">
                 <svg width="75" height="72">
                   <use xlink:href="img/sprite.svg#icon-1"/>
                 </svg>
@@ -72,7 +73,7 @@
 							<p class="features__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 						</li>
 						<li class="features__item">
-              <div class="features__img">
+              <div class="features__img" aria-hidden="true">
                 <svg width="74" height="70">
                   <use xlink:href="img/sprite.svg#icon-2"/>
                 </svg>
@@ -81,7 +82,7 @@
 							<p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 						</li>
 						<li class="features__item">
-              <div class="features__img">
+              <div class="features__img" aria-hidden="true">
                 <svg width="64" height="76">
                   <use xlink:href="img/sprite.svg#icon-3"/>
                 </svg>
@@ -99,7 +100,8 @@
 						<p class="description__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 					</div><!--/.description-->
 					<figure class="cause__item-img">
-						<img src="img/img-2.jpg" width="800" height="256" alt="Мост дьявола">
+						<img src="img/img-2.jpg" width="800" height="256" alt="">
+            <figcaption class="visually-hidden">Две параллельно стоящие скалы, объединяющиеся на вершине образующие арку</figcaption>
 					</figure>
 				</section>
 
@@ -127,13 +129,58 @@
 				<h2 class="interest__title">Заинтересовались?</h2>
 				<p class="interest__subtitle">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <div class="interest__container">
-          <div class="interest__map">
+
+          <section class="interest__form-container">
+            <h3 class="visually-hidden">Поиск гостиницы в Седоне</h3>
+            <a class="interest__button button button--big" href="hotels.html" aria-label="Открыть форму поиска">Поиск гостиницы в Седоне</a>
+            <form class="form" action="hotels.html" method="GET">
+              <ul class="form__list">
+                <li class="form__item">
+                  <label for="check-in" class="form__name">Дата заезда:</label>
+                  <div class="form__wrapper">
+                    <input class="form__input-date" type="text" name="check-in" id="check-in" placeholder="24 апреля 2017">
+                    <svg class="form__icon" width="21" height="22" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#calendar"/>
+                    </svg>
+                  </div>
+                </li>
+                <li class="form__item">
+                  <label for="check-out" class="form__name">Дата выезда:</label>
+                  <div class="form__wrapper">
+                    <input class="form__input-date" type="text" name="check-out" id="check-out" placeholder="4 июля 2017">
+                    <svg class="form__icon" width="21" height="22" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#calendar"/>
+                    </svg>
+                  </div>
+                </li>
+                <li class="form__item">
+                  <label for="number-adults" class="form__name">Взрослые:</label>
+                  <div class="form__wrapper">
+                    <div class="form__signs form__signs--minus" tabindex="-1"></div>
+                    <input class="form__input-number" type="text" name="number-adults" id="number-adults" placeholder="2" maxlength="3">
+                    <div class="form__signs form__signs--plus" tabindex="-1"></div>
+                  </div>
+                </li>
+                <li class="form__item">
+                  <label for="number-children" class="form__name">Дети:</label>
+                  <div class="form__wrapper">
+                    <div class="form__signs form__signs--minus" tabindex="-1"></div>
+                    <input class="form__input-number" type="text" name="number-children" id="number-children" placeholder="0" maxlength="3">
+                    <div class="form__signs form__signs--plus" tabindex="-1"></div>
+                  </div>
+                </li>
+                <li class="form__item">
+                  <button class="form__button button button--bg_blue" type="submit">Найти</button>
+                </li>
+              </ul>
+            </form>
+          </section><!--/.interest__form-container-->
+
+          <section class="interest__map">
+            <h3 class="visually-hidden">Карта как до нас добраться</h3>
             <img src="img/map.jpg" width="1200" height="594" alt="Карта Седона">
-          </div>
-          <div class="interest__form-container">
-            <button class="interest__button button" type="button">Поиск гостиницы в Седоне</button>
-            <!-- Форма -->
-          </div>
+          </section><!--/.interest__map-->
+
         </div>
 			</section><!--/.interest-->
 
@@ -159,22 +206,22 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="#">
-                <svg width="17" height="15">
+              <a class="social__link" href="#" aria-label="Twitter">
+                <svg width="17" height="15" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#twitter"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="#" aria-label="Facebook">
                 <svg width="12" height="22">
-                  <use xlink:href="img/sprite.svg#fb-icon"/>
+                  <use xlink:href="img/sprite.svg#fb-icon" aria-hidden="true"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
-                <svg width="20" height="16">
+              <a class="social__link" href="#" aria-label="Youtube">
+                <svg width="20" height="16" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#youtube"/>
                 </svg>
               </a>
@@ -184,8 +231,8 @@
 
         <p class="footer__copyright copyright">
           Website by
-          <a class="copyright__link" href="#">
-            <svg width="115" height="40">
+          <a class="copyright__link" href="#" aria-label="HTML Academy">
+            <svg width="115" height="40" aria-hidden="true">
               <use xlink:href="img/sprite.svg#logo_name"/>
             </svg>
           </a>

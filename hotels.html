@@ -44,8 +44,64 @@
 
 			<section class="filter">
 				<h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <!-- Форма -->
-			</section>
+        <form class="filter__form wrapper" action="hotels.html" method="GET">
+          <fieldset class="filter__group">
+            <legend class="filter__signature">Инфраструктура:</legend>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <input class="visually-hidden filter__checkbox" type="checkbox" name="pool" id="pool" checked>
+                <label class="filter__checkbox-name" for="pool">Бассейн</label>
+              </li>
+              <li class="filter__item">
+                <input class="visually-hidden filter__checkbox" type="checkbox" name="parking" id="parking">
+                <label class="filter__checkbox-name" for="parking">Парковка</label>
+              </li>
+              <li class="filter__item">
+                <input class="visually-hidden filter__checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+                <label class="filter__checkbox-name" for="wi-fi">Wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter__group">
+            <legend class="filter__signature">Тип жилья:</legend>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <input class="visually-hidden filter__checkbox" type="checkbox" name="hotel" id="hotel" checked>
+                <label class="filter__checkbox-name" for="hotel">Гостиница</label>
+              </li>
+              <li class="filter__item">
+                <input class="visually-hidden filter__checkbox" type="checkbox" name="motel" id="motel" checked>
+                <label class="filter__checkbox-name" for="motel">Мотель</label>
+              </li>
+              <li class="filter__item">
+                <input class="visually-hidden filter__checkbox" type="checkbox" name="apartments" id="apartments" checked>
+                <label class="filter__checkbox-name" for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter__group">
+            <legend class="filter__signature">Стоимость в сутки (p):</legend>
+            <div class="filter__range range">
+              <div class="range__price">
+                <div class="range__price-min">
+                  от <output name="min-price">0</output>
+                </div>
+                <div class="range__price-max">
+                  до <output name="max-price">3000</output>
+                </div>
+              </div>
+              <div class="range__controls">
+                <div class="range__scale">
+                  <div class="range__bar"></div>
+                </div>
+                <div class="range__toggle range__toggle--mix" tabindex="0"></div>
+                <div class="range__toggle range__toggle--max" tabindex="0"></div>
+              </div>
+            </div>
+            <button class="filter__button button button--bg_transparent" type="submit">Показать</button>
+          </fieldset>
+        </form>
+			</section><!--/.filter-->
 
 			<section class="sorting">
 				<h2 class="visually-hidden">Сортировка результатов поиска</h2>
@@ -64,15 +120,15 @@
 				</ul>
 				<ul class="sorting__order">
 					<li class="sorting__order-item">
-						<button class="sorting__order-button" type="button" title="Сортировка в порядке увеличение" aria-label="Сортировка в порядке увеличение">
-              <svg class="sorting__icon" width="11" height="10">
+						<button class="sorting__order-button" type="button" title="Сортировка в порядке увеличение">
+              <svg class="sorting__icon" width="11" height="10" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#icon-up-dir"/>
               </svg>
             </button>
 					</li>
 					<li class="sorting__order-item">
-						<button class="sorting__order-button sorting__order-button--active" tabindex="-1" type="button" title="Сортировка в порядке убывания" aria-label="Сортировка в порядке убывания">
-              <svg class="sorting__icon" width="11" height="10">
+						<button class="sorting__order-button sorting__order-button--active" tabindex="-1" type="button" title="Сортировка в порядке убывания">
+              <svg class="sorting__icon" width="11" height="10" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#icon-down-dir"/>
               </svg>
             </button>
@@ -84,29 +140,29 @@
 				<h2 class="visually-hidden">Список гостиниц по результатом поиска</h2>
 				<ul class="hotels__list">
 					<li class="hotels__item">
+            <div class="hotels__description">
+              <h3 class="hotels__name"><a href="blank.html">Amara Resort & Spa</a></h3>
+              <p class="hotels__price"><span>Гостиница</span> От 4000 Р.</p>
+              <div class="hotels__container">
+                <a class="hotels__link button button--bg_blue" href="blank.html">Подробнее</a>
+                <a class="hotels__link button" href="blank.html">Забронировать</a>
+              </div>
+            </div>
 						<figure class="hotels__img">
-							<img src="img/hotels-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
+							<img src="img/hotels-1.jpg" width="135" height="90" alt="">
 						</figure>
-						<div class="hotels__description">
-							<h3 class="hotels__name"><a href="blank.html">Amara Resort & Spa</a></h3>
-							<p class="hotels__price"><span>Гостиница</span> От 4000 Р.</p>
-							<div class="hotels__container">
-								<a class="hotels__link button button--bg-blue" href="blank.html">Подробнее</a>
-								<a class="hotels__link button" href="blank.html">Забронировать</a>
-							</div>
-						</div>
 						<div class="hotels__rating">
 							<div class="hotels__star">
-                <svg width="18" height="17">
+                <svg width="18" height="17" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#star"/>
                 </svg>
-                <svg width="18" height="17">
+                <svg width="18" height="17" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#star"/>
                 </svg>
-                <svg width="18" height="17">
+                <svg width="18" height="17" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#star"/>
                 </svg>
-                <svg width="18" height="17">
+                <svg width="18" height="17" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#star"/>
                 </svg>
 							</div>
@@ -114,50 +170,50 @@
 						</div>
 					</li>
 					<li class="hotels__item">
-						<figure class="hotels__img">
-							<img src="img/hotels-2.jpg" width="135" height="90" alt="Desert Quail Inn">
-						</figure>
-						<div class="hotels__description">
-							<h3 class="hotels__name"><a href="blank.html">Desert Quail Inn</a></h3>
-							<p class="hotels__price"><span>Мотель</span> От 3000 Р.</p>
-							<div class="hotels__container">
-								<a class="hotels__link button button--bg-blue" href="blank.html">Подробнее</a>
-								<a class="hotels__link button" href="blank.html">Забронировать</a>
-							</div>
-						</div>
-						<div class="hotels__rating">
-							<div class="hotels__star">
-                <svg width="18" height="17">
+            <div class="hotels__description">
+              <h3 class="hotels__name"><a href="blank.html">Desert Quail Inn</a></h3>
+              <p class="hotels__price"><span>Мотель</span> От 3000 Р.</p>
+              <div class="hotels__container">
+                <a class="hotels__link button button--bg_blue" href="blank.html">Подробнее</a>
+                <a class="hotels__link button" href="blank.html">Забронировать</a>
+              </div>
+            </div>
+            <figure class="hotels__img">
+              <img src="img/hotels-2.jpg" width="135" height="90" alt="">
+            </figure>
+            <div class="hotels__rating">
+              <div class="hotels__star">
+                <svg width="18" height="17" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#star"/>
                 </svg>
-                <svg width="18" height="17">
+                <svg width="18" height="17" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#star"/>
                 </svg>
-                <svg width="18" height="17">
+                <svg width="18" height="17" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#star"/>
                 </svg>
-							</div>
-							<p class="hotels__count">Рейтинг: 8,9</p>
-						</div>
+              </div>
+              <p class="hotels__count">Рейтинг: 8,9</p>
+            </div>
 					</li>
 					<li class="hotels__item">
+            <div class="hotels__description">
+              <h3 class="hotels__name"><a href="blank.html">Villas at Poco Diablo</a></h3>
+              <p class="hotels__price"><span>Апартаменты</span> От 2000 Р.</p>
+              <div class="hotels__container">
+                <a class="hotels__link button button--bg_blue" href="blank.html">Подробнее</a>
+                <a class="hotels__link button" href="blank.html">Забронировать</a>
+              </div>
+            </div>
 						<figure class="hotels__img">
-							<img src="img/hotels-3.jpg" width="135" height="90" alt="Desert Quail Inn">
+							<img src="img/hotels-3.jpg" width="135" height="90" alt="">
 						</figure>
-						<div class="hotels__description">
-							<h3 class="hotels__name"><a href="blank.html">Villas at Poco Diablo</a></h3>
-							<p class="hotels__price"><span>Апартаменты</span> От 2000 Р.</p>
-							<div class="hotels__container">
-								<a class="hotels__link button button--bg-blue" href="blank.html">Подробнее</a>
-								<a class="hotels__link button" href="blank.html">Забронировать</a>
-							</div>
-						</div>
 						<div class="hotels__rating">
 							<div class="hotels__star">
-                <svg width="18" height="17">
+                <svg width="18" height="17" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#star"/>
                 </svg>
-                <svg width="18" height="17">
+                <svg width="18" height="17" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#star"/>
                 </svg>
 							</div>
@@ -189,22 +245,22 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="#">
-                <svg width="17" height="15">
+              <a class="social__link" href="#" aria-label="Twitter">
+                <svg width="17" height="15" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#twitter"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="#" aria-label="Facebook">
                 <svg width="12" height="22">
-                  <use xlink:href="img/sprite.svg#fb-icon"/>
+                  <use xlink:href="img/sprite.svg#fb-icon" aria-hidden="true"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
-                <svg width="20" height="16">
+              <a class="social__link" href="#" aria-label="Youtube">
+                <svg width="20" height="16" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#youtube"/>
                 </svg>
               </a>
@@ -214,8 +270,8 @@
 
         <p class="footer__copyright copyright">
           Website by
-          <a class="copyright__link" href="#">
-            <svg width="115" height="40">
+          <a class="copyright__link" href="#" aria-label="HTML Academy">
+            <svg width="115" height="40" aria-hidden="true">
               <use xlink:href="img/sprite.svg#logo_name"/>
             </svg>
           </a>
