@@ -129,52 +129,55 @@
 				<h2 class="interest__title">Заинтересовались?</h2>
 				<p class="interest__subtitle">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <div class="interest__container">
-
-          <section class="interest__form-container">
-            <h3 class="visually-hidden">Поиск гостиницы в Седоне</h3>
+          <div class="interest__form-container">
             <a class="interest__button button button--big" href="hotels.html" aria-label="Открыть форму поиска">Поиск гостиницы в Седоне</a>
-            <form class="form" action="hotels.html" method="GET">
-              <ul class="form__list">
-                <li class="form__item">
-                  <label for="check-in" class="form__name">Дата заезда:</label>
-                  <div class="form__wrapper">
-                    <input class="form__input-date" type="text" name="check-in" id="check-in" placeholder="24 апреля 2017">
-                    <svg class="form__icon" width="21" height="22" aria-hidden="true">
-                      <use xlink:href="img/sprite.svg#calendar"/>
-                    </svg>
-                  </div>
-                </li>
-                <li class="form__item">
-                  <label for="check-out" class="form__name">Дата выезда:</label>
-                  <div class="form__wrapper">
-                    <input class="form__input-date" type="text" name="check-out" id="check-out" placeholder="4 июля 2017">
-                    <svg class="form__icon" width="21" height="22" aria-hidden="true">
-                      <use xlink:href="img/sprite.svg#calendar"/>
-                    </svg>
-                  </div>
-                </li>
-                <li class="form__item">
-                  <label for="number-adults" class="form__name">Взрослые:</label>
-                  <div class="form__wrapper">
-                    <div class="form__signs form__signs--minus" tabindex="-1"></div>
-                    <input class="form__input-number" type="text" name="number-adults" id="number-adults" placeholder="2" maxlength="3">
-                    <div class="form__signs form__signs--plus" tabindex="-1"></div>
-                  </div>
-                </li>
-                <li class="form__item">
-                  <label for="number-children" class="form__name">Дети:</label>
-                  <div class="form__wrapper">
-                    <div class="form__signs form__signs--minus" tabindex="-1"></div>
-                    <input class="form__input-number" type="text" name="number-children" id="number-children" placeholder="0" maxlength="3">
-                    <div class="form__signs form__signs--plus" tabindex="-1"></div>
-                  </div>
-                </li>
-                <li class="form__item">
-                  <button class="form__button button button--bg_blue" type="submit">Найти</button>
-                </li>
-              </ul>
-            </form>
-          </section><!--/.interest__form-container-->
+
+            <section class="form-search-hotels">
+              <h3 class="visually-hidden">Поиск гостиницы в Седоне</h3>
+              <form class="form" action="hotels.html" method="GET">
+                <ul class="form__list">
+                  <li class="form__item form__item--column_2">
+                    <label for="check-in" class="form__name">Дата заезда:</label>
+                    <div class="form__wrapper">
+                      <input class="form__input-date" type="text" name="check-in" id="check-in" placeholder="24 апреля 2017">
+                      <svg class="form__icon" width="21" height="22" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#calendar"/>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="form__item form__item--column_2">
+                    <label for="check-out" class="form__name">Дата выезда:</label>
+                    <div class="form__wrapper">
+                      <input class="form__input-date" type="text" name="check-out" id="check-out" placeholder="4 июля 2017">
+                      <svg class="form__icon" width="21" height="22" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#calendar"/>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="form__item">
+                    <label for="number-adults" class="form__name">Взрослые:</label>
+                    <div class="form__wrapper">
+                      <div class="form__signs form__signs--minus" tabindex="-1"></div>
+                      <input class="form__input-number" type="text" name="number-adults" id="number-adults" placeholder="2" maxlength="3">
+                      <div class="form__signs form__signs--plus" tabindex="-1"></div>
+                    </div>
+                  </li>
+                  <li class="form__item">
+                    <label for="number-children" class="form__name form__name--center">Дети:</label>
+                    <div class="form__wrapper">
+                      <div class="form__signs form__signs--minus" tabindex="-1"></div>
+                      <input class="form__input-number" type="text" name="number-children" id="number-children" placeholder="0" maxlength="3">
+                      <div class="form__signs form__signs--plus" tabindex="-1"></div>
+                    </div>
+                  </li>
+                  <li class="form__item form__item--column_2">
+                    <button class="form__button button button--bg_blue" type="submit">Найти</button>
+                  </li>
+                </ul>
+              </form><!--/.form-->
+            </section>
+
+          </div>
 
           <section class="interest__map">
             <h3 class="visually-hidden">Карта как до нас добраться</h3>
