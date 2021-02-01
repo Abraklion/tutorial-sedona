@@ -139,7 +139,7 @@
                   <li class="form__item form__item--column_2">
                     <label for="check-in" class="form__name">Дата заезда:</label>
                     <div class="form__wrapper">
-                      <input class="form__input-date" type="text" name="check-in" id="check-in" placeholder="24 апреля 2017">
+                      <input class="form__input-date" type="text" name="check-in" id="check-in" placeholder="24 апреля 2017" readonly autofocus>
                       <svg class="form__icon" width="21" height="22" aria-hidden="true">
                         <use xlink:href="img/sprite.svg#calendar"/>
                       </svg>
@@ -148,7 +148,7 @@
                   <li class="form__item form__item--column_2">
                     <label for="check-out" class="form__name">Дата выезда:</label>
                     <div class="form__wrapper">
-                      <input class="form__input-date" type="text" name="check-out" id="check-out" placeholder="4 июля 2017">
+                      <input class="form__input-date" type="text" name="check-out" id="check-out" placeholder="4 июля 2017" readonly>
                       <svg class="form__icon" width="21" height="22" aria-hidden="true">
                         <use xlink:href="img/sprite.svg#calendar"/>
                       </svg>
@@ -158,7 +158,7 @@
                     <label for="number-adults" class="form__name">Взрослые:</label>
                     <div class="form__wrapper">
                       <div class="form__signs form__signs--minus" tabindex="-1"></div>
-                      <input class="form__input-number" type="text" name="number-adults" id="number-adults" placeholder="2" maxlength="3">
+                      <input class="form__input-number" type="text" name="number-adults" id="number-adults" placeholder="2" autocomplete="off" maxlength="3">
                       <div class="form__signs form__signs--plus" tabindex="-1"></div>
                     </div>
                   </li>
@@ -166,7 +166,7 @@
                     <label for="number-children" class="form__name form__name--center">Дети:</label>
                     <div class="form__wrapper">
                       <div class="form__signs form__signs--minus" tabindex="-1"></div>
-                      <input class="form__input-number" type="text" name="number-children" id="number-children" placeholder="0" maxlength="3">
+                      <input class="form__input-number" type="text" name="number-children" id="number-children" placeholder="0" autocomplete="off" maxlength="3">
                       <div class="form__signs form__signs--plus" tabindex="-1"></div>
                     </div>
                   </li>
@@ -181,7 +181,7 @@
 
           <section class="interest__map">
             <h3 class="visually-hidden">Карта как до нас добраться</h3>
-            <img src="img/map.jpg" width="1200" height="594" alt="Карта Седона">
+            <img src="img/map.jpg" width="1200" height="594" alt="Карта Седона" tabindex="0" role="button" aria-label="Открыть интерактивную катру">
           </section><!--/.interest__map-->
 
         </div>
@@ -247,5 +247,6 @@
 
 	</div>
 
+  <script defer src="js/script.js"></script>
 </body>
 </html>
